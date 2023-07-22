@@ -1,0 +1,19 @@
+.blank-placeholder {
+  padding: 0 12.5%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 25%);
+
+  &__illustration {
+    width: 65vw;
+  }
+
+  &__arrow {
+    transform: translateX(5rem);
+    max-width: 2.8em;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}

@@ -1,0 +1,32 @@
+.footer {
+  &__nav-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 1.6rem;
+  }
+
+  &__add-note-button {
+    display: block;
+    margin: 0 auto;
+    filter: invert(26%) sepia(51%) saturate(1681%) hue-rotate(240deg)
+      brightness(93%) contrast(89%);
+
+    img {
+      width: 8rem;
+    }
+  }
+
+  &__nav-btn {
+    display: inline-block;
+    text-align: center;
+    width: 5.2rem;
+
+    img {
+      width: 3.2rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
