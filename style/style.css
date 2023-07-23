@@ -8,7 +8,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #faf8fc; }
+  background-color: #faf8fc;
+  overflow: hidden; }
 
 .text-xs {
   font-size: 1rem; }
@@ -53,28 +54,42 @@ body {
 .u-m-bottom-regular {
   margin-bottom: 2.4rem; }
 
-.footer__nav-list {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  list-style: none;
-  gap: 1.6rem; }
-
-.footer__add-note-button {
-  display: block;
-  margin: 0 auto;
-  filter: invert(26%) sepia(51%) saturate(1681%) hue-rotate(240deg) brightness(93%) contrast(89%); }
-  .footer__add-note-button img {
-    width: 8rem; }
-
-.footer__nav-btn {
-  display: inline-block;
-  text-align: center;
-  width: 5.2rem; }
-  .footer__nav-btn img {
-    width: 3.2rem;
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff; }
+  .footer__nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 1.6rem; }
+  .footer__add-note-button {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative;
+    top: -4rem;
+    border: 0.2rem solid #faf8fc;
+    border-radius: 200rem;
+    background-color: #faf8fc; }
+    .footer__add-note-button img {
+      width: 8rem;
+      filter: invert(26%) sepia(51%) saturate(1681%) hue-rotate(240deg) brightness(93%) contrast(89%); }
+  .footer__nav-btn {
+    display: inline-block;
+    text-align: center;
+    width: 5.2rem; }
+    .footer__nav-btn_active {
+      filter: invert(26%) sepia(51%) saturate(1681%) hue-rotate(240deg) brightness(93%) contrast(89%); }
+    .footer__nav-btn_inactive {
+      filter: invert(51%) sepia(14%) saturate(242%) hue-rotate(223deg) brightness(96%) contrast(82%); }
+    .footer__nav-btn img {
+      width: 3.2rem;
+      display: block;
+      margin: 0 auto; }
 
 .btn {
   background: transparent;
@@ -83,14 +98,12 @@ body {
 .blank-placeholder {
   padding: 0 12.5%;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 25%); }
+  top: 15vh; }
   .blank-placeholder__illustration {
     width: 65vw; }
   .blank-placeholder__arrow {
     transform: translateX(5rem);
-    max-width: 2.8em;
+    max-width: 40vw;
     width: 100%;
-    height: auto;
+    height: 12vh;
     display: block; }

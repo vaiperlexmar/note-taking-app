@@ -1,9 +1,7 @@
 .blank-placeholder {
   padding: 0 12.5%;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 25%);
+  top: 15vh;
 
   &__illustration {
     width: 65vw;
@@ -11,9 +9,9 @@
 
   &__arrow {
     transform: translateX(5rem);
-    max-width: 2.8em;
+    max-width: 40vw;
     width: 100%;
-    height: auto;
+    height: 12vh;
     display: block;
   }
 }

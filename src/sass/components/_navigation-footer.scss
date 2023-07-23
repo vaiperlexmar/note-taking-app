@@ -1,7 +1,14 @@
 .footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+
   &__nav-list {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     list-style: none;
     gap: 1.6rem;
@@ -10,11 +17,16 @@
   &__add-note-button {
     display: block;
     margin: 0 auto;
-    filter: invert(26%) sepia(51%) saturate(1681%) hue-rotate(240deg)
-      brightness(93%) contrast(89%);
+    position: relative;
+    top: -4rem;
+    border: 0.2rem solid $color-primary-background;
+    border-radius: 200rem;
+    background-color: $color-primary-background;
 
     img {
       width: 8rem;
+      filter: invert(26%) sepia(51%) saturate(1681%) hue-rotate(240deg)
+        brightness(93%) contrast(89%);
     }
   }
 
@@ -22,6 +34,16 @@
     display: inline-block;
     text-align: center;
     width: 5.2rem;
+
+    &_active {
+      filter: invert(26%) sepia(51%) saturate(1681%) hue-rotate(240deg)
+        brightness(93%) contrast(89%);
+    }
+
+    &_inactive {
+      filter: invert(51%) sepia(14%) saturate(242%) hue-rotate(223deg)
+        brightness(96%) contrast(82%);
+    }
 
     img {
       width: 3.2rem;
