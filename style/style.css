@@ -54,6 +54,68 @@ body {
 .u-m-bottom-regular {
   margin-bottom: 2.4rem; }
 
+.u-m-bottom-large {
+  margin-bottom: 3.2rem; }
+
+.u-m-small {
+  margin: 1.6rem; }
+
+.u-hidden {
+  display: none; }
+
+.btn {
+  background: transparent;
+  border: 0; }
+  .btn_purple {
+    color: #6a3ea1; }
+
+.choosing-card {
+  padding: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  border-radius: 0.8rem;
+  margin-bottom: 2.4rem; }
+  .choosing-card__icon {
+    padding: 1.2rem;
+    border-radius: 100rem;
+    height: 4.6rem; }
+    .choosing-card__icon img {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%); }
+    .choosing-card__icon_green {
+      background-color: #1f7f40; }
+    .choosing-card__icon_lime {
+      background-color: #565510; }
+    .choosing-card__icon_purple {
+      background-color: #3a2258; }
+    .choosing-card__icon_red {
+      background-color: #5a1623; }
+    .choosing-card__icon_yellow {
+      background-color: #725a03; }
+  .choosing-card__header {
+    margin-bottom: 0.8rem;
+    color: white; }
+  .choosing-card__description_green {
+    color: #1f7f40; }
+  .choosing-card__description_lime {
+    color: #565510; }
+  .choosing-card__description_purple {
+    color: #efe9f7; }
+  .choosing-card__description_red {
+    color: #5a1623; }
+  .choosing-card__description_yellow {
+    color: #725a03; }
+  .choosing-card_green {
+    background-color: #60d889; }
+  .choosing-card_lime {
+    background-color: #dedc52; }
+  .choosing-card_purple {
+    background-color: #6a3ea1; }
+  .choosing-card_red {
+    background-color: #ce3a54; }
+  .choosing-card_yellow {
+    background-color: #f8c715; }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -91,14 +153,10 @@ body {
       display: block;
       margin: 0 auto; }
 
-.btn {
-  background: transparent;
-  border: 0; }
-
 .blank-placeholder {
   padding: 0 12.5%;
   position: relative;
-  top: 15vh; }
+  top: 20vh; }
   .blank-placeholder__illustration {
     width: 65vw; }
   .blank-placeholder__arrow {
@@ -107,3 +165,18 @@ body {
     width: 100%;
     height: 12vh;
     display: block; }
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 2.4rem; }
+  .header__title {
+    display: inline-block;
+    text-align: center;
+    justify-content: center; }
+
+.main {
+  padding: 0 1.6rem; }

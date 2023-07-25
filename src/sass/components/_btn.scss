@@ -1,4 +1,8 @@
 .btn {
   background: transparent;
   border: 0;
+
+  &_purple {
+    color: $color-primary-base;
+  }
 }

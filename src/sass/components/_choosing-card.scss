@@ -1,0 +1,85 @@
+.choosing-card {
+  padding: $small-padding;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  border-radius: 0.8rem;
+  margin-bottom: $regular-margin;
+
+  &__icon {
+    img {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+        brightness(102%) contrast(102%);
+    }
+    padding: 1.2rem;
+    border-radius: 100rem;
+    height: 4.6rem;
+
+    &_green {
+      background-color: $color-green-dark;
+    }
+
+    &_lime {
+      background-color: $color-secondary-dark;
+    }
+
+    &_purple {
+      background-color: $color-primary-dark;
+    }
+
+    &_red {
+      background-color: $color-red-dark;
+    }
+
+    &_yellow {
+      background-color: $color-yellow-dark;
+    }
+  }
+
+  &__header {
+    margin-bottom: $tiny-margin;
+    color: white;
+  }
+
+  &__description {
+    &_green {
+      color: $color-green-dark;
+    }
+
+    &_lime {
+      color: $color-secondary-dark;
+    }
+
+    &_purple {
+      color: $color-primary-light;
+    }
+
+    &_red {
+      color: $color-red-dark;
+    }
+
+    &_yellow {
+      color: $color-yellow-dark;
+    }
+  }
+
+  &_green {
+    background-color: $color-green-base;
+  }
+
+  &_lime {
+    background-color: $color-secondary-base;
+  }
+
+  &_purple {
+    background-color: $color-primary-base;
+  }
+
+  &_red {
+    background-color: $color-red-base;
+  }
+
+  &_yellow {
+    background-color: $color-yellow-base;
+  }
+}
